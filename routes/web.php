@@ -11,27 +11,24 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
-
-Route::post("/blogs/{id}/comment", 'BlogController@comment');
-Route::get("/blogs", 'BlogController@index');
-Route::get("/blogs/{id}", 'BlogController@show');
 
 Route::get("/auth", function(){
     return \Auth::user();
 });
 
-Route::group(['middleware' => ['auth']], function() {
-    Route::post("/blogs", 'BlogController@store');
-    Route::post("/blogs/{id}", 'BlogController@update');
-    Route::delete("/blogs/{id}", 'BlogController@destroy');
+Route::group(['prefix' => 'blogs'], function() {
+    Route::post("/{id}/comment", 'BlogController@comment');
+    Route::get("/", 'BlogController@index');
+    Route::get("/{id}", 'BlogController@show');
+
+    Route::group(['middleware' => ['auth']], function() {
+        Route::post("/", 'BlogController@store');
+        Route::post("/{id}", 'BlogController@update');
+        Route::delete("/{id}", 'BlogController@destroy');
+    });
 });
+
 
 
 Route::get('/{path?}', function(Request $request){

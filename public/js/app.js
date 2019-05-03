@@ -64600,7 +64600,8 @@ function (_Component) {
             alert('Error');
           }
         })["catch"](function (error) {
-          alert("Error");
+          console.log(error.response);
+          alert(error.response.statusText);
         });
       } catch (err) {
         console.log(err);

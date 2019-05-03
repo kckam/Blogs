@@ -129,7 +129,8 @@ class Index extends Component {
                     }
                 })
                 .catch(function (error) {
-                    alert("Error");
+                    console.log(error.response);
+                    alert(error.response.statusText);
                 })
         }
         catch (err) {
