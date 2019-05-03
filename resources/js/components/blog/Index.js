@@ -120,7 +120,8 @@ class Index extends Component {
                     if (status === 200) {
                         _this.setState((prevState) => {
                             return {
-                                blogs: prevState.blogs.filter(blog => blog.id !== blog_id)
+                                blogs: prevState.blogs.filter(blog => blog.id !== blog_id),
+                                no_records: prevState.no_records - 1
                             }
                         });
                     }

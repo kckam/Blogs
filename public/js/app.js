@@ -64593,7 +64593,8 @@ function (_Component) {
               return {
                 blogs: prevState.blogs.filter(function (blog) {
                   return blog.id !== blog_id;
-                })
+                }),
+                no_records: prevState.no_records - 1
               };
             });
           } else {
@@ -64957,8 +64958,8 @@ function (_Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp_7\htdocs\sph_blog\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp_7\htdocs\sph_blog\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\KKC\Desktop\Node\Blogs\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\KKC\Desktop\Node\Blogs\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ }),
