@@ -1,0 +1,16 @@
+@mixin button() {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.15s ease-in, background 0.15s ease-in;
+    will-change: color, background;
+    cursor: pointer;
+    background: white;
+    color: black;
+
+    &:hover {
+        color: white;
+        background: black;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,152 @@
+section.index {
+    .filter_section {
+        position: relative;
+        padding: 15px; 
+        margin-bottom: 30px;
+        background: #eee;
+        z-index: 200;
+
+        h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .sort_section {
+
+            .checkbox_group {
+                display: inline-block;
+                input[type=checkbox] {
+                    opacity: 0;
+                    position: absolute;
+                    left: -999px;
+    
+                    &:checked + label {
+                        background: black;
+                        color: red;
+                    }
+                }
+    
+                label {
+                    @include button();
+                }
+
+                &:not(:first-child) {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+
+    .list_section {
+        position: relative;
+
+        .record {
+            box-shadow: 0px 0px 5px 0px black;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: $title-font;
+            font-weight: bold;
+        }
+
+        article {
+            margin-bottom: 30px;
+
+            &.removing {
+                pointer-events: none;
+
+                .blog_card::after {
+                    content: "Removing";
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: #f08787;
+                    font-size: 2rem;
+                    background: rgba(0, 0, 0, 0.8);
+                }
+            }
+    
+            .blog_card {
+                position: relative;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0px 0px 10px 0px black;
+                overflow: hidden;
+                box-sizing: border-box;
+
+                .remove-btn {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    cursor: pointer;
+                }
+                
+                .title {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    font-weight: bold;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+        
+                hr {
+                    margin: 0.5rem auto;
+                    width: 50%;
+                    border: none;
+                    border-bottom: 3px solid #ccc;
+                }
+        
+                .desc {
+                    position: relative;
+                    color: #666;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    height: 160px;
+                    overflow: hidden;
+        
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        height: 50px;
+                        left: 0;
+                        right: 0;
+                        background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+                    }
+                }
+        
+                .action {
+                    > a {
+                        @include button();
+                        cursor: pointer;
+
+                        &:not(:first-child) {
+                            margin-left: -1px;
+                        }
+                    }
+                }
+                
+                .details {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    width: 100%;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    margin: 15px 0 0 0;
+                    color: #888;
+    
+                    >li {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.fade_page-enter {
+    opacity: 0.01;
+}
+.fade_page-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in !important;
+}
+.fade_page-exit {
+    display: none;
+    opacity: 1 !important;
+}
+.fade_page-exit-active {
+    opacity: 0.01 !important;
+    transition: opacity 500ms ease-in !important;
+}
+
+.fade-fast-enter {
+    opacity: 0.01;
+}
+.fade-fast-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+.fade-fast-exit {
+    display: none;
+    opacity: 1;
+}
+.fade-fast-exit-active {
+    opacity: 0.01;
+    transition: opacity 200ms ease-in;
+}
+
+.item-enter {
+    opacity: 0;
+  }
+  .item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .item-exit {
+    opacity: 1;
+  }
+  .item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
