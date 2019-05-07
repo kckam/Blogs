@@ -18,6 +18,10 @@ Route::get("/test", function(){
     return \Auth::user();
 });
 
+Route::get("/test2", function(){
+    return \Auth::user();
+});
+
 Route::get("/auth", function(){
     return \Auth::user();
 });
