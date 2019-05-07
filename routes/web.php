@@ -13,6 +13,11 @@
 
 Auth::routes();
 
+
+Route::get("/test", function(){
+    return \Auth::user();
+});
+
 Route::get("/auth", function(){
     return \Auth::user();
 });
