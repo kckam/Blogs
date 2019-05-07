@@ -30,6 +30,10 @@ Route::get("/test4", function(){
     return \Auth::user();
 });
 
+Route::get("/test5", function(){
+    return \Auth::user();
+});
+
 Route::get("/auth", function(){
     return \Auth::user();
 });
