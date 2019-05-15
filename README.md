@@ -14,7 +14,8 @@
 * Go to localhost:8000
 
 <p align="center">
-<img src="https://imgur.com/IqjNDde" alt="screenshot 1">
-<img src="https://imgur.com/MMeUQn6" alt="screenshot 2">
 <img src="https://i.imgur.com/SMkW7em.png" alt="screenshot 3">
+<img src="https://i.imgur.com/IqjNDde.png" alt="screenshot 1">
+<img src="https://i.imgur.com/MMeUQn6.png" alt="screenshot 2">
+
 </p>
