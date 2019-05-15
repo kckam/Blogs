@@ -16,5 +16,5 @@
 <p align="center">
 <img src="https://imgur.com/IqjNDde" alt="screenshot 1">
 <img src="https://imgur.com/MMeUQn6" alt="screenshot 2">
-<img src="https://imgur.com/SMkW7em" alt="screenshot 3">
+<img src="https://i.imgur.com/SMkW7em.png" alt="screenshot 3">
 </p>
