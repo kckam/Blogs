@@ -13,3 +13,8 @@
 * Run php artisan serve
 * Go to localhost:8000
 
+<p align="center">
+<img src="https://imgur.com/IqjNDde" alt="screenshot 1">
+<img src="https://imgur.com/MMeUQn6" alt="screenshot 2">
+<img src="https://imgur.com/SMkW7em" alt="screenshot 3">
+</p>
