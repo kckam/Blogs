@@ -1,6 +1,6 @@
 # Simple Blogs System
 
-*Clone your project
+* Clone your project
 *Go to the folder application using cd command on your cmd or terminal
 *Run composer install on your cmd or terminal
 *Copy .env.example file to .env on the root folder. You can type copy .env.example .env if using command prompt Windows or cp .env.example .env if using terminal, Ubuntu
